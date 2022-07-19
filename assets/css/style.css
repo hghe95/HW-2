@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction:column;
+    line-height:1.4;
+    background-color: var(--bright-turquoise);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: deepskyblue;
+    color:azure;
+}
+
+.contact {
+    background-color: seagreen;
+    color: white;
+    clear: both;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.about {
+    color: darkblue;
+    float:left;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header ul li {
+    margin-left: 30px;
+    color:azure;
+}
+
+.header h1 {
+    font-size: 400%
+}
+
+h2 {
+    margin: 2% 0;
+    font-size: 200%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+nav a {
+    color:whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex: 1 1 0;
+    max-width: 96%;
+    margin: 2% auto;
+}
+
+article {
+    border-bottom: 1px solid darkblue;
+    height: 200px;
+    width: 200px;
+}
+
+article p {
+    margin: 2% 0;
+    font-size: 110%;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: darkblue;
+    color: lightblue;
+}
+
+.profile {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image:url(../images/extra-picture.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.middle {
+    width: 400px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.middle img {
+    max-height: 300px;
+    float: center;
+}
+
+.middle h2{
+    font-size: 100%;
+}
+
+.middle::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+  
+.middle > div {
+    float: center;
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+.inner {
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.other {
+    width: 50%;
+}
+
+.top {
+    width: 100%;
+  }
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        width: 75%;
+    }
+
+    .card-column {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
